@@ -17,6 +17,8 @@
 		7F203139247996CB00355B58 /* MyPage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7F203138247996CB00355B58 /* MyPage.storyboard */; };
 		7F20313B247997A400355B58 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F20313A247997A400355B58 /* SearchViewController.swift */; };
 		7F20313D247997B300355B58 /* MyPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F20313C247997B300355B58 /* MyPageViewController.swift */; };
+		7F32C671247B1B4000401856 /* NewTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F32C670247B1B4000401856 /* NewTableCell.swift */; };
+		7F32C673247B1C4600401856 /* NewTableInformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F32C672247B1C4600401856 /* NewTableInformation.swift */; };
 		7F92D0892479AD31002E0CC4 /* NotoSansCJKkr-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 7F92D0852479AD31002E0CC4 /* NotoSansCJKkr-Bold.otf */; };
 		7F92D08A2479AD31002E0CC4 /* NotoSansCJKkr-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 7F92D0862479AD31002E0CC4 /* NotoSansCJKkr-Medium.otf */; };
 		7F92D08B2479AD31002E0CC4 /* NotoSansCJKkr-DemiLight.otf in Resources */ = {isa = PBXBuildFile; fileRef = 7F92D0872479AD31002E0CC4 /* NotoSansCJKkr-DemiLight.otf */; };
@@ -50,6 +52,8 @@
 		7F203138247996CB00355B58 /* MyPage.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MyPage.storyboard; sourceTree = "<group>"; };
 		7F20313A247997A400355B58 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		7F20313C247997B300355B58 /* MyPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageViewController.swift; sourceTree = "<group>"; };
+		7F32C670247B1B4000401856 /* NewTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = NewTableCell.swift; path = NaverBand/Resources/Storyboards/NewTableCell.swift; sourceTree = SOURCE_ROOT; };
+		7F32C672247B1C4600401856 /* NewTableInformation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = NewTableInformation.swift; path = NaverBand/Resources/Storyboards/NewTableInformation.swift; sourceTree = SOURCE_ROOT; };
 		7F92D0852479AD31002E0CC4 /* NotoSansCJKkr-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NotoSansCJKkr-Bold.otf"; path = "../../../../../Downloads/아카이브/NotoSansCJKkr-Bold.otf"; sourceTree = "<group>"; };
 		7F92D0862479AD31002E0CC4 /* NotoSansCJKkr-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NotoSansCJKkr-Medium.otf"; path = "../../../../../Downloads/아카이브/NotoSansCJKkr-Medium.otf"; sourceTree = "<group>"; };
 		7F92D0872479AD31002E0CC4 /* NotoSansCJKkr-DemiLight.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NotoSansCJKkr-DemiLight.otf"; path = "../../../../../Downloads/아카이브/NotoSansCJKkr-DemiLight.otf"; sourceTree = "<group>"; };
@@ -190,6 +194,8 @@
 		7F92D0A2247ABDE5002E0CC4 /* MyPage */ = {
 			isa = PBXGroup;
 			children = (
+				7F32C672247B1C4600401856 /* NewTableInformation.swift */,
+				7F32C670247B1B4000401856 /* NewTableCell.swift */,
 				7F20313C247997B300355B58 /* MyPageViewController.swift */,
 			);
 			path = MyPage;
@@ -297,7 +303,9 @@
 				7F92D0B6247AC0F3002E0CC4 /* Band.swift in Sources */,
 				7F20313B247997A400355B58 /* SearchViewController.swift in Sources */,
 				7FFD7817247AC3D900DC804B /* NewViewController.swift in Sources */,
+				7F32C673247B1C4600401856 /* NewTableInformation.swift in Sources */,
 				7F92D0AC247AC038002E0CC4 /* NewCell.swift in Sources */,
+				7F32C671247B1B4000401856 /* NewTableCell.swift in Sources */,
 				7F92D09E247A8E92002E0CC4 /* ChatViewController.swift in Sources */,
 				7F203121247981CC00355B58 /* SceneDelegate.swift in Sources */,
 				7F92D0B4247AC0EB002E0CC4 /* Page.swift in Sources */,

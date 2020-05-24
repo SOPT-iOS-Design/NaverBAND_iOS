@@ -26,10 +26,10 @@
             </objects>
             <point key="canvasLocation" x="1946" y="-25"/>
         </scene>
-        <!--HomeViewController-->
+        <!--MyPageViewController-->
         <scene sceneID="719-iX-afX">
             <objects>
-                <viewControllerPlaceholder storyboardName="Home" referencedIdentifier="HomeViewController" id="q78-N7-Pcn" sceneMemberID="viewController">
+                <viewControllerPlaceholder storyboardName="MyPage" referencedIdentifier="MyPageViewController" id="q78-N7-Pcn" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item" id="s68-jE-Qpd"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qmi-h1-LiF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -46,10 +46,10 @@
             </objects>
             <point key="canvasLocation" x="1230" y="-25"/>
         </scene>
-        <!--MyPageViewController-->
+        <!--HomeViewController-->
         <scene sceneID="WzI-FL-F05">
             <objects>
-                <viewControllerPlaceholder storyboardName="MyPage" referencedIdentifier="MyPageViewController" id="z79-HF-teT" sceneMemberID="viewController">
+                <viewControllerPlaceholder storyboardName="Home" referencedIdentifier="HomeViewController" id="z79-HF-teT" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item" id="SJK-Hh-Gqb"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7xI-YC-yeZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

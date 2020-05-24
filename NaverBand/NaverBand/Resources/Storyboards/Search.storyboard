@@ -55,7 +55,7 @@
                                 <rect key="frame" x="0.0" y="101" width="375" height="711"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="b7j-GB-xyA">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="1010"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="950"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="주제별 찾기" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gpa-3W-5Ru">
                                                 <rect key="frame" x="16" y="0.0" width="87" height="27"/>
@@ -424,7 +424,7 @@
                                             <constraint firstItem="iJU-Ws-lZj" firstAttribute="leading" secondItem="b7j-GB-xyA" secondAttribute="leading" constant="16" id="AzZ-Ga-UNg"/>
                                             <constraint firstAttribute="trailing" secondItem="heV-2l-8LH" secondAttribute="trailing" constant="234" id="CuY-wZ-TCb"/>
                                             <constraint firstItem="SFx-wp-wpn" firstAttribute="leading" secondItem="b7j-GB-xyA" secondAttribute="leading" constant="16" id="DGN-Q8-jgw"/>
-                                            <constraint firstAttribute="height" priority="750" constant="1010" id="FHK-0j-SH7"/>
+                                            <constraint firstAttribute="height" priority="750" constant="950" id="FHK-0j-SH7"/>
                                             <constraint firstItem="Gpa-3W-5Ru" firstAttribute="leading" secondItem="b7j-GB-xyA" secondAttribute="leading" constant="16" id="HQD-rz-clc"/>
                                             <constraint firstItem="WLj-L3-jv6" firstAttribute="top" secondItem="heV-2l-8LH" secondAttribute="bottom" constant="14.33" id="MOV-V1-dnN"/>
                                             <constraint firstItem="vWf-xz-hGd" firstAttribute="top" secondItem="gVL-7g-Ggz" secondAttribute="bottom" constant="42" id="Ous-un-tff"/>
