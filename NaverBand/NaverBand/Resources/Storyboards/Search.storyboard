@@ -33,7 +33,7 @@
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="btnSearch" translatesAutoresizingMaskIntoConstraints="NO" id="CLT-Md-FYW">
                                         <rect key="frame" x="0.0" y="0.0" width="343" height="37"/>
                                     </imageView>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="밴드, 페이지, 게시글 검색" clearsOnBeginEditing="YES" minimumFontSize="15" clearButtonMode="unlessEditing" translatesAutoresizingMaskIntoConstraints="NO" id="QP3-1g-5gv">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="밴드, 페이지, 게시글 검색" clearsOnBeginEditing="YES" minimumFontSize="15" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="QP3-1g-5gv">
                                         <rect key="frame" x="30" y="0.0" width="300" height="37"/>
                                         <color key="textColor" red="0.63529411764705879" green="0.63529411764705879" blue="0.63529411764705879" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" name="NotoSansCJKkr-Regular" family="Noto Sans CJK KR" pointSize="13"/>
@@ -282,6 +282,7 @@
                                                                     <rect key="frame" x="107" y="46" width="189" height="21"/>
                                                                     <constraints>
                                                                         <constraint firstAttribute="width" constant="189" id="RIj-iH-fTJ"/>
+                                                                        <constraint firstAttribute="height" constant="21" id="wnF-D6-itF"/>
                                                                     </constraints>
                                                                     <fontDescription key="fontDescription" name="NotoSansCJKkr-Regular" family="Noto Sans CJK KR" pointSize="14"/>
                                                                     <nil key="textColor"/>
@@ -307,6 +308,12 @@
                                                             </constraints>
                                                         </collectionViewCellContentView>
                                                         <size key="customSize" width="312" height="80"/>
+                                                        <connections>
+                                                            <outlet property="Button" destination="xYA-4R-4Cn" id="Pda-ew-ddv"/>
+                                                            <outlet property="Img" destination="kII-sc-dgp" id="c4w-wq-sud"/>
+                                                            <outlet property="TitleLabel" destination="SaX-tb-5mZ" id="Iln-os-VXw"/>
+                                                            <outlet property="subTitleLabel" destination="xFW-FD-Rtq" id="ecc-Ur-6Q6"/>
+                                                        </connections>
                                                     </collectionViewCell>
                                                 </cells>
                                             </collectionView>
@@ -393,6 +400,15 @@
                                                             </constraints>
                                                         </collectionViewCellContentView>
                                                         <size key="customSize" width="254" height="150"/>
+                                                        <connections>
+                                                            <outlet property="BackImg" destination="XaW-QD-PMN" id="4e4-K9-lUB"/>
+                                                            <outlet property="Button" destination="juQ-pf-Yc9" id="6qn-sq-lvH"/>
+                                                            <outlet property="Img" destination="p0U-Xa-S4U" id="avp-0x-xKD"/>
+                                                            <outlet property="line" destination="cKV-WW-Iax" id="f4b-ZE-EVy"/>
+                                                            <outlet property="nameLabel" destination="FD3-JL-3j4" id="Idn-CY-5Zm"/>
+                                                            <outlet property="numberLabel" destination="dLA-o7-mdo" id="QYO-Md-bZM"/>
+                                                            <outlet property="titleLabel" destination="dEy-7R-Gir" id="9Fe-EP-HbH"/>
+                                                        </connections>
                                                     </collectionViewCell>
                                                 </cells>
                                             </collectionView>
@@ -460,6 +476,14 @@
                         <outlet property="NewCollectionView" destination="WLj-L3-jv6" id="e1K-ll-zip"/>
                         <outlet property="PageCollectionView" destination="gVL-7g-Ggz" id="JiZ-Bn-2kL"/>
                         <outlet property="searchText" destination="QP3-1g-5gv" id="ira-cQ-fk3"/>
+                        <outletCollection property="TopicButton" destination="1uo-mw-PzL" collectionClass="NSMutableArray" id="iSq-8G-Doc"/>
+                        <outletCollection property="TopicButton" destination="jeG-yH-XHI" collectionClass="NSMutableArray" id="Dze-95-C6z"/>
+                        <outletCollection property="TopicButton" destination="ePr-Qu-9xV" collectionClass="NSMutableArray" id="3JS-Zg-EGU"/>
+                        <outletCollection property="TopicButton" destination="zM2-Kt-kix" collectionClass="NSMutableArray" id="AkD-ZU-4Ed"/>
+                        <outletCollection property="TopicButton" destination="rE2-TU-6WD" collectionClass="NSMutableArray" id="JQZ-0p-aW1"/>
+                        <outletCollection property="TopicButton" destination="0Bo-Ts-JKp" collectionClass="NSMutableArray" id="WQi-pe-v79"/>
+                        <outletCollection property="TopicButton" destination="Iw0-zv-Wwr" collectionClass="NSMutableArray" id="3oN-bn-NoB"/>
+                        <outletCollection property="TopicButton" destination="i18-3k-YU7" collectionClass="NSMutableArray" id="hsu-Rk-E2y"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="G1P-5J-mcw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

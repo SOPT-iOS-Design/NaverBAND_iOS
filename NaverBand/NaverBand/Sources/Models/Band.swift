@@ -8,7 +8,20 @@
 
 import UIKit
 
-struct Band {
+struct Band{
     
+    var image : UIImage?
+    var title : String
+    var number : String
+    var name : String
+    
+    init(imageName: String, title: String, number: String, name: String){
+        
+        self.image = UIImage(named: imageName)
+        self.title = title
+        self.number = number
+        self.name = name
+    }
 }
+
 
