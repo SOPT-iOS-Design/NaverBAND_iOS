@@ -13,6 +13,10 @@
 		D4208FB8247A49BB00F868E4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D4208FB6247A49BB00F868E4 /* Main.storyboard */; };
 		D4208FBA247A49BB00F868E4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D4208FB9247A49BB00F868E4 /* Assets.xcassets */; };
 		D4208FBD247A49BB00F868E4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D4208FBB247A49BB00F868E4 /* LaunchScreen.storyboard */; };
+		D45D59EB247EADF000ABC42C /* NewBandCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D45D59EA247EADF000ABC42C /* NewBandCell.swift */; };
+		D45D59EE247EAE9700ABC42C /* Band.swift in Sources */ = {isa = PBXBuildFile; fileRef = D45D59ED247EAE9700ABC42C /* Band.swift */; };
+		D45D59F0247EB01100ABC42C /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D45D59EF247EB01100ABC42C /* UIColor.swift */; };
+		D46D4587247DED1F004F9CC9 /* FormTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = D46D4586247DED1F004F9CC9 /* FormTextField.swift */; };
 		D4BCBD51247B85CE007590B5 /* MypageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4BCBD50247B85CE007590B5 /* MypageViewController.swift */; };
 		D4BCBD53247B85EC007590B5 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4BCBD52247B85EC007590B5 /* SearchViewController.swift */; };
 /* End PBXBuildFile section */
@@ -26,6 +30,11 @@
 		D4208FB9247A49BB00F868E4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D4208FBC247A49BB00F868E4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D4208FBE247A49BB00F868E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D45D59EA247EADF000ABC42C /* NewBandCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewBandCell.swift; sourceTree = "<group>"; };
+		D45D59ED247EAE9700ABC42C /* Band.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Band.swift; sourceTree = "<group>"; };
+		D45D59EF247EB01100ABC42C /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
+		D46D4580247DEA00004F9CC9 /* NotoSansCJKkr-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansCJKkr-Bold.otf"; sourceTree = "<group>"; };
+		D46D4586247DED1F004F9CC9 /* FormTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormTextField.swift; sourceTree = "<group>"; };
 		D4BCBD50247B85CE007590B5 /* MypageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MypageViewController.swift; sourceTree = "<group>"; };
 		D4BCBD52247B85EC007590B5 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -60,17 +69,78 @@
 		D4208FAF247A49BB00F868E4 /* NaverBand */ = {
 			isa = PBXGroup;
 			children = (
-				D4208FB0247A49BB00F868E4 /* AppDelegate.swift */,
-				D4208FB2247A49BB00F868E4 /* SceneDelegate.swift */,
-				D4208FB4247A49BB00F868E4 /* ViewController.swift */,
-				D4208FB6247A49BB00F868E4 /* Main.storyboard */,
-				D4BCBD52247B85EC007590B5 /* SearchViewController.swift */,
-				D4BCBD50247B85CE007590B5 /* MypageViewController.swift */,
-				D4208FB9247A49BB00F868E4 /* Assets.xcassets */,
-				D4208FBB247A49BB00F868E4 /* LaunchScreen.storyboard */,
+				D46D4585247DEAA0004F9CC9 /* Sources */,
+				D46D4584247DEA91004F9CC9 /* Resources */,
 				D4208FBE247A49BB00F868E4 /* Info.plist */,
 			);
 			path = NaverBand;
+			sourceTree = "<group>";
+		};
+		D45D59E6247E908300ABC42C /* Design */ = {
+			isa = PBXGroup;
+			children = (
+				D45D59EF247EB01100ABC42C /* UIColor.swift */,
+				D46D4586247DED1F004F9CC9 /* FormTextField.swift */,
+			);
+			path = Design;
+			sourceTree = "<group>";
+		};
+		D45D59EC247EADFC00ABC42C /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				D45D59ED247EAE9700ABC42C /* Band.swift */,
+				D45D59EA247EADF000ABC42C /* NewBandCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		D46D4581247DEA16004F9CC9 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				D46D4580247DEA00004F9CC9 /* NotoSansCJKkr-Bold.otf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		D46D4582247DEA2A004F9CC9 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				D4208FBB247A49BB00F868E4 /* LaunchScreen.storyboard */,
+				D4208FB6247A49BB00F868E4 /* Main.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		D46D4583247DEA77004F9CC9 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				D4208FB4247A49BB00F868E4 /* ViewController.swift */,
+				D4BCBD52247B85EC007590B5 /* SearchViewController.swift */,
+				D4BCBD50247B85CE007590B5 /* MypageViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		D46D4584247DEA91004F9CC9 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				D45D59E6247E908300ABC42C /* Design */,
+				D46D4582247DEA2A004F9CC9 /* Storyboards */,
+				D4208FB9247A49BB00F868E4 /* Assets.xcassets */,
+				D46D4581247DEA16004F9CC9 /* Fonts */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		D46D4585247DEAA0004F9CC9 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				D45D59EC247EADFC00ABC42C /* Cells */,
+				D4208FB0247A49BB00F868E4 /* AppDelegate.swift */,
+				D4208FB2247A49BB00F868E4 /* SceneDelegate.swift */,
+				D46D4583247DEA77004F9CC9 /* ViewControllers */,
+			);
+			path = Sources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -145,8 +215,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				D4BCBD53247B85EC007590B5 /* SearchViewController.swift in Sources */,
+				D46D4587247DED1F004F9CC9 /* FormTextField.swift in Sources */,
+				D45D59EE247EAE9700ABC42C /* Band.swift in Sources */,
 				D4208FB5247A49BB00F868E4 /* ViewController.swift in Sources */,
+				D45D59F0247EB01100ABC42C /* UIColor.swift in Sources */,
 				D4208FB1247A49BB00F868E4 /* AppDelegate.swift in Sources */,
+				D45D59EB247EADF000ABC42C /* NewBandCell.swift in Sources */,
 				D4208FB3247A49BB00F868E4 /* SceneDelegate.swift in Sources */,
 				D4BCBD51247B85CE007590B5 /* MypageViewController.swift in Sources */,
 			);
