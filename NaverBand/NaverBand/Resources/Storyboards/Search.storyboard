@@ -279,12 +279,11 @@
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="동물 좋아하고 정보소통해요" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xFW-FD-Rtq">
-                                                                    <rect key="frame" x="107" y="46" width="189" height="21"/>
+                                                                    <rect key="frame" x="107" y="44" width="189" height="19.333333333333329"/>
                                                                     <constraints>
                                                                         <constraint firstAttribute="width" constant="189" id="RIj-iH-fTJ"/>
-                                                                        <constraint firstAttribute="height" constant="21" id="wnF-D6-itF"/>
                                                                     </constraints>
-                                                                    <fontDescription key="fontDescription" name="NotoSansCJKkr-Regular" family="Noto Sans CJK KR" pointSize="14"/>
+                                                                    <fontDescription key="fontDescription" name="NotoSansCJKkr-Regular" family="Noto Sans CJK KR" pointSize="13"/>
                                                                     <nil key="textColor"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
@@ -298,13 +297,13 @@
                                                                 <constraint firstItem="kII-sc-dgp" firstAttribute="top" secondItem="tfd-gF-swP" secondAttribute="top" id="IOk-ZW-9JX"/>
                                                                 <constraint firstItem="SaX-tb-5mZ" firstAttribute="top" secondItem="tfd-gF-swP" secondAttribute="top" constant="15" id="NXa-oW-fCx"/>
                                                                 <constraint firstItem="xFW-FD-Rtq" firstAttribute="leading" secondItem="kII-sc-dgp" secondAttribute="trailing" constant="26" id="ZBf-mh-vlw"/>
+                                                                <constraint firstItem="xFW-FD-Rtq" firstAttribute="top" secondItem="SaX-tb-5mZ" secondAttribute="bottom" constant="5" id="ee3-AA-6dz"/>
                                                                 <constraint firstAttribute="bottom" secondItem="xYA-4R-4Cn" secondAttribute="bottom" id="g9L-bd-GMV"/>
                                                                 <constraint firstAttribute="bottom" secondItem="kII-sc-dgp" secondAttribute="bottom" id="hKO-CU-9Gg"/>
                                                                 <constraint firstItem="xYA-4R-4Cn" firstAttribute="top" secondItem="tfd-gF-swP" secondAttribute="top" id="j3N-ma-dJA"/>
                                                                 <constraint firstAttribute="trailing" secondItem="xFW-FD-Rtq" secondAttribute="trailing" constant="16" id="mbR-DP-faD"/>
                                                                 <constraint firstItem="xYA-4R-4Cn" firstAttribute="leading" secondItem="tfd-gF-swP" secondAttribute="leading" id="qlu-zn-NbH"/>
                                                                 <constraint firstItem="SaX-tb-5mZ" firstAttribute="leading" secondItem="kII-sc-dgp" secondAttribute="trailing" constant="26" id="tUa-1c-igy"/>
-                                                                <constraint firstItem="xFW-FD-Rtq" firstAttribute="top" secondItem="SaX-tb-5mZ" secondAttribute="bottom" constant="7" id="vrt-nf-I9j"/>
                                                             </constraints>
                                                         </collectionViewCellContentView>
                                                         <size key="customSize" width="312" height="80"/>

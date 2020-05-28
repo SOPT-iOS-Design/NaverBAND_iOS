@@ -9,12 +9,12 @@
 import UIKit
 
 struct New{
-    
+
     var image: UIImage?
     var title: String
-    
+
     init(imageName: String, title: String){
-        
+
         self.image = UIImage(named: imageName)
         self.title = title
     }
