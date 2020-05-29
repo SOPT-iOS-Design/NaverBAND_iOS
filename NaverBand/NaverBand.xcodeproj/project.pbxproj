@@ -17,6 +17,8 @@
 		D45D59EE247EAE9700ABC42C /* NewBand.swift in Sources */ = {isa = PBXBuildFile; fileRef = D45D59ED247EAE9700ABC42C /* NewBand.swift */; };
 		D45D59F0247EB01100ABC42C /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D45D59EF247EB01100ABC42C /* UIColor.swift */; };
 		D46D4587247DED1F004F9CC9 /* FormTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = D46D4586247DED1F004F9CC9 /* FormTextField.swift */; };
+		D488B1E624814FC50062BF5C /* NewsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D488B1E524814FC50062BF5C /* NewsCell.swift */; };
+		D488B1E824814FCF0062BF5C /* News.swift in Sources */ = {isa = PBXBuildFile; fileRef = D488B1E724814FCF0062BF5C /* News.swift */; };
 		D4AC71202480C21C0006FDAE /* RecommendPageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4AC711F2480C21C0006FDAE /* RecommendPageCell.swift */; };
 		D4AC71222480C38E0006FDAE /* RecommendPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4AC71212480C38E0006FDAE /* RecommendPage.swift */; };
 		D4AC71242480D0D30006FDAE /* RecommendBand.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4AC71232480D0D30006FDAE /* RecommendBand.swift */; };
@@ -39,6 +41,8 @@
 		D45D59EF247EB01100ABC42C /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
 		D46D4580247DEA00004F9CC9 /* NotoSansCJKkr-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansCJKkr-Bold.otf"; sourceTree = "<group>"; };
 		D46D4586247DED1F004F9CC9 /* FormTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormTextField.swift; sourceTree = "<group>"; };
+		D488B1E524814FC50062BF5C /* NewsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsCell.swift; sourceTree = "<group>"; };
+		D488B1E724814FCF0062BF5C /* News.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = News.swift; sourceTree = "<group>"; };
 		D4AC711C2480C0480006FDAE /* NotoSansCJKkr-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansCJKkr-Medium.otf"; sourceTree = "<group>"; };
 		D4AC711E2480C0490006FDAE /* NotoSansCJKkr-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansCJKkr-Regular.otf"; sourceTree = "<group>"; };
 		D4AC711F2480C21C0006FDAE /* RecommendPageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RecommendPageCell.swift; path = NaverBand/Sources/Cells/RecommendPageCell.swift; sourceTree = SOURCE_ROOT; };
@@ -98,6 +102,8 @@
 		D45D59EC247EADFC00ABC42C /* Cells */ = {
 			isa = PBXGroup;
 			children = (
+				D488B1E524814FC50062BF5C /* NewsCell.swift */,
+				D488B1E724814FCF0062BF5C /* News.swift */,
 				D4AC71232480D0D30006FDAE /* RecommendBand.swift */,
 				D4AC71252480D19C0006FDAE /* RecommendBandCell.swift */,
 				D45D59ED247EAE9700ABC42C /* NewBand.swift */,
@@ -233,6 +239,7 @@
 				D4BCBD53247B85EC007590B5 /* SearchViewController.swift in Sources */,
 				D46D4587247DED1F004F9CC9 /* FormTextField.swift in Sources */,
 				D4AC71262480D19C0006FDAE /* RecommendBandCell.swift in Sources */,
+				D488B1E824814FCF0062BF5C /* News.swift in Sources */,
 				D4AC71222480C38E0006FDAE /* RecommendPage.swift in Sources */,
 				D45D59EE247EAE9700ABC42C /* NewBand.swift in Sources */,
 				D4208FB5247A49BB00F868E4 /* ViewController.swift in Sources */,
@@ -240,6 +247,7 @@
 				D4208FB1247A49BB00F868E4 /* AppDelegate.swift in Sources */,
 				D45D59EB247EADF000ABC42C /* NewBandCell.swift in Sources */,
 				D4208FB3247A49BB00F868E4 /* SceneDelegate.swift in Sources */,
+				D488B1E624814FC50062BF5C /* NewsCell.swift in Sources */,
 				D4AC71242480D0D30006FDAE /* RecommendBand.swift in Sources */,
 				D4BCBD51247B85CE007590B5 /* MypageViewController.swift in Sources */,
 				D4AC71202480C21C0006FDAE /* RecommendPageCell.swift in Sources */,

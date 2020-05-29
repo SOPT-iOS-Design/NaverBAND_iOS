@@ -9,22 +9,69 @@
 import UIKit
 
 class MypageViewController: UIViewController {
-
+    
+    @IBOutlet weak var newsCollectionView: UICollectionView!
+    
+    var newsList: [News] = []
     @IBOutlet weak var lineView: UIView!
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        setDatas()
+        
+        newsCollectionView.delegate = self
+        newsCollectionView.dataSource = self
+        
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    private func setDatas() -> Void {
+        let news1 = News(imgName: "icPhoto1", name: "순위로 보는 요즘 핫한 맛집과 카페", detail: "내마음속에 저장각!")
+        let news2 = News(imgName: "icPhoto2", name: "바름이의 힐링되는 미소", detail: "귀엽고 깜찍한 무료 스티커가 잔뜩~")
+        let news3 = News(imgName: "icPhoto3", name: "생일날은 케익은 필수", detail: "더 맛있는 부드러운 치즈케이크")
+        
+        newsList = [news1, news2, news3]
     }
-    */
+}
+//MARK: - DataSource
+extension MypageViewController: UICollectionViewDataSource {
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return newsList.count
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        guard let newsCell = collectionView.dequeueReusableCell(withReuseIdentifier: NewsCell.identifier, for: indexPath) as? NewsCell else { return UICollectionViewCell() }
+        newsCell.set(newsList[indexPath.row])
+        return newsCell
+    }
+    
+    
+}
+
+//MARK: - DelegateFlowLayout
+extension MypageViewController: UICollectionViewDelegateFlowLayout {
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt
+        indexPath: IndexPath) -> CGSize {
+        
+            return CGSize(width: 355, height: 60)
+        }
+    
+    // 마진
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
+        
+        return UIEdgeInsets(top: 0, left: 31, bottom: 0, right: 0)
+        
+    }
+
+    // 위 아래
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
+        
+        return 43
+        
+    }
+
+    // 좌,우
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
+        return 0
+    }
 
 }
