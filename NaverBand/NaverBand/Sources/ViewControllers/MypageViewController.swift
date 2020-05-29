@@ -10,6 +10,7 @@ import UIKit
 
 class MypageViewController: UIViewController {
 
+    @IBOutlet weak var lineView: UIView!
     override func viewDidLoad() {
         super.viewDidLoad()
 
