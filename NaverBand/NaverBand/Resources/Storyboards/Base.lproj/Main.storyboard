@@ -206,7 +206,7 @@
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="추천 페이지 &lt;내맘대로 정하는 순위&gt;" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2tH-F7-0RX">
-                                                                    <rect key="frame" x="69.999999999999986" y="44" width="165.66666666666663" height="16.333333333333329"/>
+                                                                    <rect key="frame" x="69.999999999999986" y="44" width="158.66666666666663" height="13"/>
                                                                     <fontDescription key="fontDescription" name="NotoSansCJKkr-Regular" family="Noto Sans CJK KR" pointSize="11"/>
                                                                     <nil key="textColor"/>
                                                                     <nil key="highlightedColor"/>

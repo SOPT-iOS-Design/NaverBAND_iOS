@@ -43,7 +43,6 @@ extension MypageViewController: UICollectionViewDataSource {
         return newsCell
     }
     
-    
 }
 
 //MARK: - DelegateFlowLayout
