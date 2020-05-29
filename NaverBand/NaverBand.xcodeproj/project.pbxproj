@@ -14,9 +14,13 @@
 		D4208FBA247A49BB00F868E4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D4208FB9247A49BB00F868E4 /* Assets.xcassets */; };
 		D4208FBD247A49BB00F868E4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D4208FBB247A49BB00F868E4 /* LaunchScreen.storyboard */; };
 		D45D59EB247EADF000ABC42C /* NewBandCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D45D59EA247EADF000ABC42C /* NewBandCell.swift */; };
-		D45D59EE247EAE9700ABC42C /* Band.swift in Sources */ = {isa = PBXBuildFile; fileRef = D45D59ED247EAE9700ABC42C /* Band.swift */; };
+		D45D59EE247EAE9700ABC42C /* NewBand.swift in Sources */ = {isa = PBXBuildFile; fileRef = D45D59ED247EAE9700ABC42C /* NewBand.swift */; };
 		D45D59F0247EB01100ABC42C /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D45D59EF247EB01100ABC42C /* UIColor.swift */; };
 		D46D4587247DED1F004F9CC9 /* FormTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = D46D4586247DED1F004F9CC9 /* FormTextField.swift */; };
+		D4AC71202480C21C0006FDAE /* RecommendPageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4AC711F2480C21C0006FDAE /* RecommendPageCell.swift */; };
+		D4AC71222480C38E0006FDAE /* RecommendPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4AC71212480C38E0006FDAE /* RecommendPage.swift */; };
+		D4AC71242480D0D30006FDAE /* RecommendBand.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4AC71232480D0D30006FDAE /* RecommendBand.swift */; };
+		D4AC71262480D19C0006FDAE /* RecommendBandCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4AC71252480D19C0006FDAE /* RecommendBandCell.swift */; };
 		D4BCBD51247B85CE007590B5 /* MypageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4BCBD50247B85CE007590B5 /* MypageViewController.swift */; };
 		D4BCBD53247B85EC007590B5 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4BCBD52247B85EC007590B5 /* SearchViewController.swift */; };
 /* End PBXBuildFile section */
@@ -31,10 +35,16 @@
 		D4208FBC247A49BB00F868E4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D4208FBE247A49BB00F868E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D45D59EA247EADF000ABC42C /* NewBandCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewBandCell.swift; sourceTree = "<group>"; };
-		D45D59ED247EAE9700ABC42C /* Band.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Band.swift; sourceTree = "<group>"; };
+		D45D59ED247EAE9700ABC42C /* NewBand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewBand.swift; sourceTree = "<group>"; };
 		D45D59EF247EB01100ABC42C /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
 		D46D4580247DEA00004F9CC9 /* NotoSansCJKkr-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansCJKkr-Bold.otf"; sourceTree = "<group>"; };
 		D46D4586247DED1F004F9CC9 /* FormTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormTextField.swift; sourceTree = "<group>"; };
+		D4AC711C2480C0480006FDAE /* NotoSansCJKkr-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansCJKkr-Medium.otf"; sourceTree = "<group>"; };
+		D4AC711E2480C0490006FDAE /* NotoSansCJKkr-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansCJKkr-Regular.otf"; sourceTree = "<group>"; };
+		D4AC711F2480C21C0006FDAE /* RecommendPageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RecommendPageCell.swift; path = NaverBand/Sources/Cells/RecommendPageCell.swift; sourceTree = SOURCE_ROOT; };
+		D4AC71212480C38E0006FDAE /* RecommendPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendPage.swift; sourceTree = "<group>"; };
+		D4AC71232480D0D30006FDAE /* RecommendBand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendBand.swift; sourceTree = "<group>"; };
+		D4AC71252480D19C0006FDAE /* RecommendBandCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendBandCell.swift; sourceTree = "<group>"; };
 		D4BCBD50247B85CE007590B5 /* MypageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MypageViewController.swift; sourceTree = "<group>"; };
 		D4BCBD52247B85EC007590B5 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -88,8 +98,12 @@
 		D45D59EC247EADFC00ABC42C /* Cells */ = {
 			isa = PBXGroup;
 			children = (
-				D45D59ED247EAE9700ABC42C /* Band.swift */,
+				D4AC71232480D0D30006FDAE /* RecommendBand.swift */,
+				D4AC71252480D19C0006FDAE /* RecommendBandCell.swift */,
+				D45D59ED247EAE9700ABC42C /* NewBand.swift */,
 				D45D59EA247EADF000ABC42C /* NewBandCell.swift */,
+				D4AC711F2480C21C0006FDAE /* RecommendPageCell.swift */,
+				D4AC71212480C38E0006FDAE /* RecommendPage.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -97,6 +111,8 @@
 		D46D4581247DEA16004F9CC9 /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
+				D4AC711C2480C0480006FDAE /* NotoSansCJKkr-Medium.otf */,
+				D4AC711E2480C0490006FDAE /* NotoSansCJKkr-Regular.otf */,
 				D46D4580247DEA00004F9CC9 /* NotoSansCJKkr-Bold.otf */,
 			);
 			path = Fonts;
@@ -216,13 +232,17 @@
 			files = (
 				D4BCBD53247B85EC007590B5 /* SearchViewController.swift in Sources */,
 				D46D4587247DED1F004F9CC9 /* FormTextField.swift in Sources */,
-				D45D59EE247EAE9700ABC42C /* Band.swift in Sources */,
+				D4AC71262480D19C0006FDAE /* RecommendBandCell.swift in Sources */,
+				D4AC71222480C38E0006FDAE /* RecommendPage.swift in Sources */,
+				D45D59EE247EAE9700ABC42C /* NewBand.swift in Sources */,
 				D4208FB5247A49BB00F868E4 /* ViewController.swift in Sources */,
 				D45D59F0247EB01100ABC42C /* UIColor.swift in Sources */,
 				D4208FB1247A49BB00F868E4 /* AppDelegate.swift in Sources */,
 				D45D59EB247EADF000ABC42C /* NewBandCell.swift in Sources */,
 				D4208FB3247A49BB00F868E4 /* SceneDelegate.swift in Sources */,
+				D4AC71242480D0D30006FDAE /* RecommendBand.swift in Sources */,
 				D4BCBD51247B85CE007590B5 /* MypageViewController.swift in Sources */,
+				D4AC71202480C21C0006FDAE /* RecommendPageCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
