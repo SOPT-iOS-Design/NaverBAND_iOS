@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2BB592E9A1EEA09DC4D399EE /* Pods_NaverBand.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1F77CD68E31278BA009EAF6 /* Pods_NaverBand.framework */; };
 		7F20311F247981CC00355B58 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F20311E247981CC00355B58 /* AppDelegate.swift */; };
 		7F203121247981CC00355B58 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F203120247981CC00355B58 /* SceneDelegate.swift */; };
 		7F203123247981CC00355B58 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F203122247981CC00355B58 /* ViewController.swift */; };
@@ -40,6 +41,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1B7DD5DBFFFB03A13A6076B6 /* Pods-NaverBand.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NaverBand.release.xcconfig"; path = "Target Support Files/Pods-NaverBand/Pods-NaverBand.release.xcconfig"; sourceTree = "<group>"; };
 		7F20311B247981CC00355B58 /* NaverBand.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NaverBand.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F20311E247981CC00355B58 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7F203120247981CC00355B58 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -72,6 +74,8 @@
 		7F92D0B5247AC0F3002E0CC4 /* Band.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Band.swift; sourceTree = "<group>"; };
 		7FB1F91E24799EA80012EFA3 /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
 		7FFD7816247AC3D900DC804B /* NewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewViewController.swift; sourceTree = "<group>"; };
+		E1F77CD68E31278BA009EAF6 /* Pods_NaverBand.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NaverBand.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FB8D7DA6566A31734063E136 /* Pods-NaverBand.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NaverBand.debug.xcconfig"; path = "Target Support Files/Pods-NaverBand/Pods-NaverBand.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,17 +83,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2BB592E9A1EEA09DC4D399EE /* Pods_NaverBand.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		12A07C9E423683C355F06DAF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E1F77CD68E31278BA009EAF6 /* Pods_NaverBand.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		7F203112247981CC00355B58 = {
 			isa = PBXGroup;
 			children = (
 				7F20311D247981CC00355B58 /* NaverBand */,
 				7F20311C247981CC00355B58 /* Products */,
+				C0B9679DA815FBDAA631A37D /* Pods */,
+				12A07C9E423683C355F06DAF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -150,13 +165,13 @@
 		7F2031352479943600355B58 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				7F92D0A2247ABDE5002E0CC4 /* MyPage */,
-				7F92D0A1247ABDD3002E0CC4 /* Search */,
 				7F92D09D247A8E92002E0CC4 /* ChatViewController.swift */,
 				7F92D09F247A8EA1002E0CC4 /* HomeViewController.swift */,
 				7F92D091247A8C41002E0CC4 /* TabBarViewController.swift */,
 				7F203122247981CC00355B58 /* ViewController.swift */,
 				7FFD7816247AC3D900DC804B /* NewViewController.swift */,
+				7F92D0A1247ABDD3002E0CC4 /* Search */,
+				7F92D0A2247ABDE5002E0CC4 /* MyPage */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -211,6 +226,16 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
+		C0B9679DA815FBDAA631A37D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FB8D7DA6566A31734063E136 /* Pods-NaverBand.debug.xcconfig */,
+				1B7DD5DBFFFB03A13A6076B6 /* Pods-NaverBand.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -218,9 +243,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7F20312F247981CD00355B58 /* Build configuration list for PBXNativeTarget "NaverBand" */;
 			buildPhases = (
+				53A58F37667D63424E4AC1C5 /* [CP] Check Pods Manifest.lock */,
 				7F203117247981CC00355B58 /* Sources */,
 				7F203118247981CC00355B58 /* Frameworks */,
 				7F203119247981CC00355B58 /* Resources */,
+				2113610AC8E5DEC994EDF6D4 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -285,6 +312,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2113610AC8E5DEC994EDF6D4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NaverBand/Pods-NaverBand-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NaverBand/Pods-NaverBand-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-NaverBand/Pods-NaverBand-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		53A58F37667D63424E4AC1C5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NaverBand-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		7F203117247981CC00355B58 /* Sources */ = {
@@ -450,6 +519,7 @@
 		};
 		7F203130247981CD00355B58 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FB8D7DA6566A31734063E136 /* Pods-NaverBand.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -468,6 +538,7 @@
 		};
 		7F203131247981CD00355B58 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1B7DD5DBFFFB03A13A6076B6 /* Pods-NaverBand.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
