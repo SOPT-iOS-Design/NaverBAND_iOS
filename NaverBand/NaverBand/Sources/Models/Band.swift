@@ -6,6 +6,7 @@
 //  Copyright © 2020 박주연. All rights reserved.
 //
 
+import Foundation 
 import UIKit
 
 struct Band{

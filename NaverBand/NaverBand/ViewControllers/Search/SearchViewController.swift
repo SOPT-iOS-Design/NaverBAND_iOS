@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Kingfisher
 
 class SearchViewController: UIViewController {
     
@@ -16,10 +17,12 @@ class SearchViewController: UIViewController {
     @IBOutlet weak var PageCollectionView: UICollectionView!
     @IBOutlet weak var BandCollectionView: UICollectionView!
     
-    // 데이터 임의로 넣기
+    // 배열에 데이터 담아두기
     private var NewList: [New] = []
     private var PageList: [Page] = []
     private var BandList : [Band] = []
+    
+    var NewBandDataSet = [NewBandData.NewBandDataClass]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,17 +32,21 @@ class SearchViewController: UIViewController {
         
         RoundBtn()
         
-        setNewList()
+        //NewCollectionView.reloadData()
+        
+        //setNewList()
         NewCollectionView.delegate = self
         NewCollectionView.dataSource = self
         
-        setPageList()
+        // setPageList()
         PageCollectionView.delegate = self
         PageCollectionView.dataSource = self
         
-        setBandList()
+        //setBandList()
         BandCollectionView.delegate = self
         BandCollectionView.dataSource = self
+        
+        newbandData()
         
     }
     // 버튼 라운드 넣기
@@ -53,39 +60,38 @@ class SearchViewController: UIViewController {
         
     }
     
-    //서버 통신X , collection view 데이터 리스트
-    private func setNewList(){
-        let new1 = New(imageName: "imgNewband", title: "남도의들꽃세상")
-        let new2 = New(imageName: "imgNewband2", title: "자전거타기")
-        let new3 = New(imageName: "imgNewband3", title: "국내,해외 맛집")
-        let new4 = New(imageName: "imgNewband5", title: "습관과일상")
-        let new5 = New(imageName: "imgNewband4", title: "해외여행추천")
-        let new6 = New(imageName: "imgNewband6", title: "나이키신발직구")
+    func newbandData(){
         
-        NewList = [new1, new2, new3, new4, new5, new6]
+        NewBandService.shared.NewBand {
+            
+            response in
+            
+            switch response{
+            case . success(let data):
+                self.NewBandDataSet = [] // 초기화
+                self.NewBandDataSet = data as!
+                    [NewBandData.NewBandDataClass]
+                
+                self.NewCollectionView.reloadData()
+                
+                print("여기는 들어오나?")
+                
+            case.networkFail:
+                print("error")
+                print("실패 광광광")
+                
+            case .requestErr(_):
+                print("requestErr")
+            case .pathErr:
+                print("pathErr")
+            case .serverErr:
+                print("serverErr")
+            }
+            
+        }
     }
     
-    private func setPageList(){
-        let page1 = Page(imageName: "imgPage", title: "반려동물가이드", subtitle: "동물 좋아하고 정보소통해요")
-        let page2 = Page(imageName: "imgPage2", title: "육아휴직툰", subtitle: "육아휴직한 아빠의 일상을 그리고 읽습니다.")
-        let page3 = Page(imageName: "imgPage3", title: "1일1책 성장읽기", subtitle: "1일 1독, 매일한권의 책을  만나세요!")
-        let page4 = Page(imageName: "imgPage4", title: "다이어리공유", subtitle: "자신의 다이어리를 공유해보세요.")
-        let page5 = Page(imageName: "imgPage5", title: "얼리버디", subtitle: "버스탈땐 얼리버디")
-        let page6 = Page(imageName: "imgPage6", title: "나이키", subtitle: "나이키 신발을 추천해드려요.")
-        let page7 = Page(imageName: "imgPage3", title: "1일1책 성장읽기", subtitle: "1일 1독, 매일한권의 책을 만나세요!")
-        let page8 = Page(imageName: "imgPage2", title: "육아휴직툰", subtitle: "육아휴직한 아빠의 일상을 그리고 읽습니다.")
-        let page9 = Page(imageName: "imgPage4", title: "다이어리공유", subtitle: "자신의 다이어리를 공유해보세요.")
-        
-        PageList = [page1, page2, page3, page4, page5, page6, page7, page8, page9]
-    }
     
-    private func setBandList(){
-        let band1 = Band(imageName: "btnRecommendimg", title: "강아지를 사랑하는 사람 모여라", number: "멤버 99,999", name: "neymar123")
-        let band2 = Band(imageName: "btnRecommend2", title: "너네가 축구를 아니", number: "멤버 1,000", name: "슛 골")
-        let band3 = Band(imageName: "btnRecommend3", title: "이케아 좋아", number: "멤버 7,777", name: "호호호")
-        
-        BandList = [band1, band2, band3]
-    }
 }
 
 extension SearchViewController:UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout{
@@ -93,37 +99,49 @@ extension SearchViewController:UICollectionViewDelegate, UICollectionViewDataSou
     // 각각의 collection view별로 분기 처리
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         
-        if collectionView == self.NewCollectionView{return 6}
-        else if collectionView == self.PageCollectionView{return 9}
+        if collectionView == self.NewCollectionView{ return NewList.count}
+        else if collectionView == self.PageCollectionView{return PageList.count}
         
         return BandList.count
     }
     
-   
+    
+    
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-                
+        
         if collectionView == self.NewCollectionView{
-            guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: NewCell.identifier, for: indexPath) as? NewCell else{ return UICollectionViewCell()}
-            cell.set(NewList[indexPath.row])
+            
+            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "NewCell",for:indexPath) as! NewCell
+            
+            let newCell = NewBandDataSet[indexPath.row]
+            
+            cell.Label.text = newCell.bandName
+            
+            let urlStr = newCell.bandImg
+            
+            cell.NewImg.kf.setImage(with: URL(string: urlStr))
+            
             return cell
         }
             
         else if collectionView == self.PageCollectionView{
             guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: PageCell.identifier, for: indexPath) as? PageCell
                 else{ return UICollectionViewCell()}
-            cell.set(PageList[indexPath.row])
+           // cell.set(PageList[indexPath.row])
             return cell
         }
             
         else {
             guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: BandCell.identifier, for: indexPath) as? BandCell
                 else {return UICollectionViewCell()}
-            cell.set(BandList[indexPath.row])
+           // cell.set(BandList[indexPath.row])
             return cell
         }
         
     }
     
+    
+    // collectionView Cell의 "위치" 조정
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
         
         if collectionView == self.NewCollectionView{
@@ -139,6 +157,8 @@ extension SearchViewController:UICollectionViewDelegate, UICollectionViewDataSou
         }
     }
     
+    
+    // collectionVeiw Cell의 "크기" 조정
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt
         indexPath: IndexPath) -> CGSize {
         
@@ -153,10 +173,9 @@ extension SearchViewController:UICollectionViewDelegate, UICollectionViewDataSou
             return CGSize(width: (collectionView.frame.width - 120), height: (collectionView.frame.height))
         }
     }
-    
-    
 }
 
+// 검색 클릭시 키보드 생성 + background 클릭시 키보드 제거
 extension SearchViewController:UITextFieldDelegate {
     
     private func addKeyboardObserver() {
