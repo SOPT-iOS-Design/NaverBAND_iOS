@@ -23,6 +23,8 @@ class SearchViewController: UIViewController {
     private var BandList : [Band] = []
     
     var NewBandDataSet = [NewBandData.NewBandDataClass]()
+    var RecommendPageDataSet = [RecommendPageData.RecommendPageDataClass]()
+    var RecommendBandDataSet = [RecommendBandData.RecommendBandDataClass]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -47,6 +49,8 @@ class SearchViewController: UIViewController {
         BandCollectionView.dataSource = self
         
         newbandData()
+        recommendpageData()
+        recommendbandData()
         
     }
     // 버튼 라운드 넣기
@@ -91,7 +95,70 @@ class SearchViewController: UIViewController {
         }
     }
     
+    func recommendpageData(){
+        
+        RecommendPageService.shared.RecommendPage {
+            
+            response in
+            
+            switch response{
+            case . success(let data):
+                self.RecommendPageDataSet = [] // 초기화
+                self.RecommendPageDataSet = data as!
+                    [RecommendPageData.RecommendPageDataClass]
+                
+                self.PageCollectionView.reloadData()
+                
+                print("recommendpage 들어옴")
+                
+            case.networkFail:
+                print("error")
+                print(" recommendpage 실패")
+                
+            case .requestErr(_):
+                print("requestErr")
+            case .pathErr:
+                print("pathErr")
+            case .serverErr:
+                print("serverErr")
+            }
+            
+        }
+    }
     
+    func recommendbandData(){
+        
+        RecommendBandService.shared.RecommendBand {
+            
+            response in
+            
+            switch response{
+            case . success(let data):
+                self.RecommendBandDataSet = [] // 초기화
+                self.RecommendBandDataSet = data as!
+                    [RecommendBandData.RecommendBandDataClass]
+                
+                self.BandCollectionView.reloadData()
+                
+                print("reco Band 들어옴")
+                
+            case.networkFail:
+                print("error")
+                print(" reco Band 실패")
+                
+            case .requestErr(_):
+                print("requestErr")
+            case .pathErr:
+                print("pathErr")
+            case .serverErr:
+                print("serverErr")
+            }
+            
+        }
+        
+    }
+    
+
 }
 
 extension SearchViewController:UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout{
@@ -125,16 +192,46 @@ extension SearchViewController:UICollectionViewDelegate, UICollectionViewDataSou
         }
             
         else if collectionView == self.PageCollectionView{
-            guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: PageCell.identifier, for: indexPath) as? PageCell
-                else{ return UICollectionViewCell()}
-           // cell.set(PageList[indexPath.row])
+//            guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: PageCell.identifier, for: indexPath) as? PageCell
+//                else{ return UICollectionViewCell()}
+//           // cell.set(PageList[indexPath.row])
+//            return cell
+            
+            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "PageCell",for:indexPath) as! PageCell
+            
+            let pageCell = RecommendPageDataSet[indexPath.row]
+            
+            cell.TitleLabel.text = pageCell.pageName
+            cell.subTitleLabel.text = pageCell.pageDetail
+            
+            let urlStr = pageCell.pageImg
+            
+            cell.PageImg.kf.setImage(with: URL(string: urlStr))
+            
             return cell
+            
+            
+            
         }
             
         else {
-            guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: BandCell.identifier, for: indexPath) as? BandCell
-                else {return UICollectionViewCell()}
-           // cell.set(BandList[indexPath.row])
+//            guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: BandCell.identifier, for: indexPath) as? BandCell
+//                else {return UICollectionViewCell()}
+//           // cell.set(BandList[indexPath.row])
+//            return cell
+            
+            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "BandCell",for:indexPath) as! BandCell
+            
+            let bandCell = RecommendBandDataSet[indexPath.row]
+            
+            cell.titleLabel.text = bandCell.bandName
+            cell.numberLabel.text = bandCell.bandNumOfMember
+            cell.nameLabel.text = bandCell.userNickname
+            
+            let urlStr = bandCell.bandImg
+            
+            cell.BandImg.kf.setImage(with: URL(string: urlStr))
+            
             return cell
         }
         

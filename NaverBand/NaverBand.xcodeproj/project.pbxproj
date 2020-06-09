@@ -41,6 +41,12 @@
 		7FB1F91F24799EA80012EFA3 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FB1F91E24799EA80012EFA3 /* UIColor.swift */; };
 		7FE788CD248F704700CD415B /* NewBandData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FE788CC248F704700CD415B /* NewBandData.swift */; };
 		7FE788CF248F725400CD415B /* NewBandService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FE788CE248F725400CD415B /* NewBandService.swift */; };
+		7FE788D1248FAE3900CD415B /* RecommendPageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FE788D0248FAE3900CD415B /* RecommendPageService.swift */; };
+		7FE788D3248FAE5400CD415B /* RecommendBandService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FE788D2248FAE5400CD415B /* RecommendBandService.swift */; };
+		7FE788D5248FAE6500CD415B /* NewNoticeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FE788D4248FAE6500CD415B /* NewNoticeService.swift */; };
+		7FE788D7248FAF1400CD415B /* RecommendPageData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FE788D6248FAF1400CD415B /* RecommendPageData.swift */; };
+		7FE788D9248FB00600CD415B /* RecommendBandData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FE788D8248FB00600CD415B /* RecommendBandData.swift */; };
+		7FE788DD248FB0A000CD415B /* NewNoticeData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FE788DC248FB0A000CD415B /* NewNoticeData.swift */; };
 		7FFD7817247AC3D900DC804B /* NewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FFD7816247AC3D900DC804B /* NewViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -81,6 +87,12 @@
 		7FB1F91E24799EA80012EFA3 /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
 		7FE788CC248F704700CD415B /* NewBandData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewBandData.swift; sourceTree = "<group>"; };
 		7FE788CE248F725400CD415B /* NewBandService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewBandService.swift; sourceTree = "<group>"; };
+		7FE788D0248FAE3900CD415B /* RecommendPageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendPageService.swift; sourceTree = "<group>"; };
+		7FE788D2248FAE5400CD415B /* RecommendBandService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendBandService.swift; sourceTree = "<group>"; };
+		7FE788D4248FAE6500CD415B /* NewNoticeService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewNoticeService.swift; sourceTree = "<group>"; };
+		7FE788D6248FAF1400CD415B /* RecommendPageData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendPageData.swift; sourceTree = "<group>"; };
+		7FE788D8248FB00600CD415B /* RecommendBandData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendBandData.swift; sourceTree = "<group>"; };
+		7FE788DC248FB0A000CD415B /* NewNoticeData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewNoticeData.swift; sourceTree = "<group>"; };
 		7FFD7816247AC3D900DC804B /* NewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewViewController.swift; sourceTree = "<group>"; };
 		E1F77CD68E31278BA009EAF6 /* Pods_NaverBand.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NaverBand.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB8D7DA6566A31734063E136 /* Pods-NaverBand.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NaverBand.debug.xcconfig"; path = "Target Support Files/Pods-NaverBand/Pods-NaverBand.debug.xcconfig"; sourceTree = "<group>"; };
@@ -206,6 +218,9 @@
 			isa = PBXGroup;
 			children = (
 				7FE788CE248F725400CD415B /* NewBandService.swift */,
+				7FE788D0248FAE3900CD415B /* RecommendPageService.swift */,
+				7FE788D2248FAE5400CD415B /* RecommendBandService.swift */,
+				7FE788D4248FAE6500CD415B /* NewNoticeService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -216,6 +231,9 @@
 				7F68E06B24824779001EA844 /* APIConstants.swift */,
 				7F68E06D24824830001EA844 /* NetworkResult.swift */,
 				7FE788CC248F704700CD415B /* NewBandData.swift */,
+				7FE788D6248FAF1400CD415B /* RecommendPageData.swift */,
+				7FE788D8248FB00600CD415B /* RecommendBandData.swift */,
+				7FE788DC248FB0A000CD415B /* NewNoticeData.swift */,
 			);
 			path = Responses;
 			sourceTree = "<group>";
@@ -401,14 +419,20 @@
 				7F203123247981CC00355B58 /* ViewController.swift in Sources */,
 				7FE788CF248F725400CD415B /* NewBandService.swift in Sources */,
 				7F20311F247981CC00355B58 /* AppDelegate.swift in Sources */,
+				7FE788D1248FAE3900CD415B /* RecommendPageService.swift in Sources */,
 				7F68E06C24824779001EA844 /* APIConstants.swift in Sources */,
+				7FE788DD248FB0A000CD415B /* NewNoticeData.swift in Sources */,
+				7FE788D5248FAE6500CD415B /* NewNoticeService.swift in Sources */,
 				7F92D0B0247AC051002E0CC4 /* BandCell.swift in Sources */,
 				7F92D0AE247AC045002E0CC4 /* PageCell.swift in Sources */,
+				7FE788D7248FAF1400CD415B /* RecommendPageData.swift in Sources */,
 				7FE788CD248F704700CD415B /* NewBandData.swift in Sources */,
 				7F92D0A0247A8EA1002E0CC4 /* HomeViewController.swift in Sources */,
 				7F92D092247A8C41002E0CC4 /* TabBarViewController.swift in Sources */,
+				7FE788D3248FAE5400CD415B /* RecommendBandService.swift in Sources */,
 				7F92D0B6247AC0F3002E0CC4 /* Band.swift in Sources */,
 				7F68E06E24824830001EA844 /* NetworkResult.swift in Sources */,
+				7FE788D9248FB00600CD415B /* RecommendBandData.swift in Sources */,
 				7F20313B247997A400355B58 /* SearchViewController.swift in Sources */,
 				7FFD7817247AC3D900DC804B /* NewViewController.swift in Sources */,
 				7F32C673247B1C4600401856 /* NewTableInformation.swift in Sources */,

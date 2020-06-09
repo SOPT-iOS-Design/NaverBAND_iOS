@@ -1,5 +1,5 @@
 //
-//  NewBandService.swift
+//  RecommendBandService.swift
 //  NaverBand
 //
 //  Created by 박주연 on 2020/06/09.
@@ -9,16 +9,16 @@
 import Foundation
 import Alamofire
 
-class NewBandService {
+class RecommendBandService {
     
-    static let shared = NewBandService()
+    static let shared = RecommendBandService()
     
-    func NewBand(completion: @escaping (NetworkResult<Any>) -> Void) {
+    func RecommendBand(completion: @escaping (NetworkResult<Any>) -> Void) {
         let header: HTTPHeaders = ["Content-Type": "application/json"]
         
-        let NewBandURL = APIConstants.newBandURL
+        let recommendBandURL = APIConstants.recommendBandURL
         
-        Alamofire.request(NewBandURL).responseJSON{
+        Alamofire.request(recommendBandURL).responseJSON{
             response in
             
             switch response.result {
@@ -33,13 +33,13 @@ class NewBandService {
                             
                             do {
                                 let decoder = JSONDecoder()
-                                let object = try decoder.decode(NewBandData.self, from: data)
+                                let object = try decoder.decode(RecommendBandData.self, from: data)
                                 
                                 if object.success == true {
-                                    print(" NewBand 통신 성공!!!")
+                                    print("RecoBand 통신 성공!!!")
                                     completion(.success(object.data))
                                 } else {
-                                    print("통신 안 됨")
+                                    print("통신X")
                                 }
                                 
                             } catch (let err){
@@ -61,7 +61,7 @@ class NewBandService {
             case .failure(let err):
                 print(err.localizedDescription)
                 completion(.networkFail)
-                print("통신failure")
+                print("RecoBand 통신 실패")
                 // .networkFail이라는 반환 값이 넘어감
                 break
                 
