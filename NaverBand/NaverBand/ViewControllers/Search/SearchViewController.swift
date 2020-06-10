@@ -78,7 +78,7 @@ class SearchViewController: UIViewController {
                 
                 self.NewCollectionView.reloadData()
                 
-                print(self.NewBandDataSet)
+                print("NewBandDataSet", self.NewBandDataSet)
                 
             case.networkFail:
                 print("error")
@@ -109,7 +109,7 @@ class SearchViewController: UIViewController {
                 
                 self.PageCollectionView.reloadData()
                 
-                print(self.RecommendPageDataSet)
+                //print(self.RecommendPageDataSet)
                 
             case.networkFail:
                 print("error")
@@ -140,7 +140,7 @@ class SearchViewController: UIViewController {
                 
                 self.BandCollectionView.reloadData()
                 
-                print(self.RecommendBandDataSet)
+                //print(self.RecommendBandDataSet)
                 
             case.networkFail:
                 print("error")
@@ -166,10 +166,10 @@ extension SearchViewController:UICollectionViewDelegate, UICollectionViewDataSou
     // 각각의 collection view별로 분기 처리
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         
-        if collectionView == self.NewCollectionView{ return NewList.count}
-        else if collectionView == self.PageCollectionView{return PageList.count}
+        if collectionView == self.NewCollectionView{ return NewBandDataSet.count}
+        else if collectionView == self.PageCollectionView{return RecommendPageDataSet.count}
         
-        return BandList.count
+        return RecommendBandDataSet.count
     }
     
     
