@@ -21,6 +21,10 @@
 		D438F27D2490C21F00965BC9 /* FourViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D438F27C2490C21F00965BC9 /* FourViewController.swift */; };
 		D438F27F2490C31E00965BC9 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D438F27E2490C31E00965BC9 /* TabBarViewController.swift */; };
 		D438F2812490C59000965BC9 /* Four.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D438F2802490C59000965BC9 /* Four.storyboard */; };
+		D438F2832490DCF300965BC9 /* NewBandData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D438F2822490DCF300965BC9 /* NewBandData.swift */; };
+		D438F2852490DCFE00965BC9 /* NewBandService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D438F2842490DCFE00965BC9 /* NewBandService.swift */; };
+		D438F2882490DDD700965BC9 /* NetworkResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = D438F2862490DDD700965BC9 /* NetworkResult.swift */; };
+		D438F2892490DDD700965BC9 /* APIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = D438F2872490DDD700965BC9 /* APIConstants.swift */; };
 		D45D59EB247EADF000ABC42C /* NewBandCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D45D59EA247EADF000ABC42C /* NewBandCell.swift */; };
 		D45D59EE247EAE9700ABC42C /* NewBand.swift in Sources */ = {isa = PBXBuildFile; fileRef = D45D59ED247EAE9700ABC42C /* NewBand.swift */; };
 		D45D59F0247EB01100ABC42C /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D45D59EF247EB01100ABC42C /* UIColor.swift */; };
@@ -52,6 +56,10 @@
 		D438F27C2490C21F00965BC9 /* FourViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FourViewController.swift; sourceTree = "<group>"; };
 		D438F27E2490C31E00965BC9 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 		D438F2802490C59000965BC9 /* Four.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Four.storyboard; sourceTree = "<group>"; };
+		D438F2822490DCF300965BC9 /* NewBandData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewBandData.swift; sourceTree = "<group>"; };
+		D438F2842490DCFE00965BC9 /* NewBandService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewBandService.swift; sourceTree = "<group>"; };
+		D438F2862490DDD700965BC9 /* NetworkResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkResult.swift; sourceTree = "<group>"; };
+		D438F2872490DDD700965BC9 /* APIConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIConstants.swift; sourceTree = "<group>"; };
 		D45D59EA247EADF000ABC42C /* NewBandCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewBandCell.swift; sourceTree = "<group>"; };
 		D45D59ED247EAE9700ABC42C /* NewBand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewBand.swift; sourceTree = "<group>"; };
 		D45D59EF247EB01100ABC42C /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
@@ -104,6 +112,17 @@
 				D4208FBE247A49BB00F868E4 /* Info.plist */,
 			);
 			path = NaverBand;
+			sourceTree = "<group>";
+		};
+		D438F28A2490DDFC00965BC9 /* APIs */ = {
+			isa = PBXGroup;
+			children = (
+				D438F2822490DCF300965BC9 /* NewBandData.swift */,
+				D438F2842490DCFE00965BC9 /* NewBandService.swift */,
+				D438F2872490DDD700965BC9 /* APIConstants.swift */,
+				D438F2862490DDD700965BC9 /* NetworkResult.swift */,
+			);
+			path = APIs;
 			sourceTree = "<group>";
 		};
 		D45D59E6247E908300ABC42C /* Design */ = {
@@ -174,6 +193,7 @@
 				D46D4582247DEA2A004F9CC9 /* Storyboards */,
 				D4208FB9247A49BB00F868E4 /* Assets.xcassets */,
 				D46D4581247DEA16004F9CC9 /* Fonts */,
+				D438F28A2490DDFC00965BC9 /* APIs */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -271,15 +291,19 @@
 				D438F2792490C20000965BC9 /* OneViewController.swift in Sources */,
 				D438F27F2490C31E00965BC9 /* TabBarViewController.swift in Sources */,
 				D488B1E824814FCF0062BF5C /* News.swift in Sources */,
+				D438F2882490DDD700965BC9 /* NetworkResult.swift in Sources */,
 				D4AC71222480C38E0006FDAE /* RecommendPage.swift in Sources */,
 				D45D59EE247EAE9700ABC42C /* NewBand.swift in Sources */,
 				D438F27D2490C21F00965BC9 /* FourViewController.swift in Sources */,
 				D45D59F0247EB01100ABC42C /* UIColor.swift in Sources */,
 				D4208FB1247A49BB00F868E4 /* AppDelegate.swift in Sources */,
+				D438F2892490DDD700965BC9 /* APIConstants.swift in Sources */,
 				D45D59EB247EADF000ABC42C /* NewBandCell.swift in Sources */,
 				D4208FB3247A49BB00F868E4 /* SceneDelegate.swift in Sources */,
 				D488B1E624814FC50062BF5C /* NewsCell.swift in Sources */,
 				D4AC71242480D0D30006FDAE /* RecommendBand.swift in Sources */,
+				D438F2852490DCFE00965BC9 /* NewBandService.swift in Sources */,
+				D438F2832490DCF300965BC9 /* NewBandData.swift in Sources */,
 				D438F27B2490C20700965BC9 /* TwoViewController.swift in Sources */,
 				D4BCBD51247B85CE007590B5 /* MypageViewController.swift in Sources */,
 				D4AC71202480C21C0006FDAE /* RecommendPageCell.swift in Sources */,
