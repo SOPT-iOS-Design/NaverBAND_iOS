@@ -18,9 +18,9 @@ class SearchViewController: UIViewController {
     @IBOutlet weak var BandCollectionView: UICollectionView!
     
     // 배열에 데이터 담아두기
-    private var NewList: [New] = []
-    private var PageList: [Page] = []
-    private var BandList : [Band] = []
+    var NewList: [New] = []
+    var PageList: [Page] = []
+    var BandList : [Band] = []
     
     var NewBandDataSet = [NewBandData.NewBandDataClass]()
     var RecommendPageDataSet = [RecommendPageData.RecommendPageDataClass]()
@@ -72,13 +72,13 @@ class SearchViewController: UIViewController {
             
             switch response{
             case . success(let data):
-                self.NewBandDataSet = [] // 초기화
+                self.NewBandDataSet = []
                 self.NewBandDataSet = data as!
                     [NewBandData.NewBandDataClass]
                 
                 self.NewCollectionView.reloadData()
                 
-                print("여기는 들어오나?")
+                print(self.NewBandDataSet)
                 
             case.networkFail:
                 print("error")
@@ -109,7 +109,7 @@ class SearchViewController: UIViewController {
                 
                 self.PageCollectionView.reloadData()
                 
-                print("recommendpage 들어옴")
+                print(self.RecommendPageDataSet)
                 
             case.networkFail:
                 print("error")
@@ -140,7 +140,7 @@ class SearchViewController: UIViewController {
                 
                 self.BandCollectionView.reloadData()
                 
-                print("reco Band 들어옴")
+                print(self.RecommendBandDataSet)
                 
             case.networkFail:
                 print("error")
@@ -188,14 +188,12 @@ extension SearchViewController:UICollectionViewDelegate, UICollectionViewDataSou
             
             cell.NewImg.kf.setImage(with: URL(string: urlStr))
             
+            print(newCell)
+            
             return cell
         }
             
         else if collectionView == self.PageCollectionView{
-//            guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: PageCell.identifier, for: indexPath) as? PageCell
-//                else{ return UICollectionViewCell()}
-//           // cell.set(PageList[indexPath.row])
-//            return cell
             
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "PageCell",for:indexPath) as! PageCell
             
@@ -210,16 +208,9 @@ extension SearchViewController:UICollectionViewDelegate, UICollectionViewDataSou
             
             return cell
             
-            
-            
         }
             
         else {
-//            guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: BandCell.identifier, for: indexPath) as? BandCell
-//                else {return UICollectionViewCell()}
-//           // cell.set(BandList[indexPath.row])
-//            return cell
-            
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "BandCell",for:indexPath) as! BandCell
             
             let bandCell = RecommendBandDataSet[indexPath.row]
