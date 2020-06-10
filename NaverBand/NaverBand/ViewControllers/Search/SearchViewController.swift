@@ -17,11 +17,12 @@ class SearchViewController: UIViewController {
     @IBOutlet weak var PageCollectionView: UICollectionView!
     @IBOutlet weak var BandCollectionView: UICollectionView!
     
-    // 배열에 데이터 담아두기
-    var NewList: [New] = []
-    var PageList: [Page] = []
-    var BandList : [Band] = []
+    // 서버 통신X - 배열에 데이터 담아두기
+//    var NewList: [New] = []
+//    var PageList: [Page] = []
+//    var BandList : [Band] = []
     
+    // 서버 통신O - 서버 통신시, 데이터 담아두는 배열
     var NewBandDataSet = [NewBandData.NewBandDataClass]()
     var RecommendPageDataSet = [RecommendPageData.RecommendPageDataClass]()
     var RecommendBandDataSet = [RecommendBandData.RecommendBandDataClass]()
@@ -78,7 +79,7 @@ class SearchViewController: UIViewController {
                 
                 self.NewCollectionView.reloadData()
                 
-                print("NewBandDataSet", self.NewBandDataSet)
+               // print("NewBandDataSet", self.NewBandDataSet)
                 
             case.networkFail:
                 print("error")
@@ -109,8 +110,6 @@ class SearchViewController: UIViewController {
                 
                 self.PageCollectionView.reloadData()
                 
-                //print(self.RecommendPageDataSet)
-                
             case.networkFail:
                 print("error")
                 print(" recommendpage 실패")
@@ -139,8 +138,6 @@ class SearchViewController: UIViewController {
                     [RecommendBandData.RecommendBandDataClass]
                 
                 self.BandCollectionView.reloadData()
-                
-                //print(self.RecommendBandDataSet)
                 
             case.networkFail:
                 print("error")

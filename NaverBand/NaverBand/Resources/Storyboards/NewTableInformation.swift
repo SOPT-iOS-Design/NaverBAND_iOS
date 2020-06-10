@@ -36,17 +36,4 @@ enum Image {
     }
 }
 
-//struct NewTableInformation {
-//
-//    var image : UIImage?
-//    var title : String
-//    var subtitle : String
-//
-//    init(imageName: String, title: String, subtitle: String){
-//        self.image = UIImage(named: imageName)
-//        self.title = title
-//        self.subtitle = subtitle
-//    }
-//}
-
 

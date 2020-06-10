@@ -9,6 +9,8 @@
 import Foundation
 import UIKit
 
+// Model struct파일은 데이터 통신 전에 클라에서 임의로 데이터를 넣을 때
+// 서버 통신 시 필요없음
 struct Page {
     
     var image : UIImage?
