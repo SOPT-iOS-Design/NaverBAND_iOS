@@ -171,6 +171,7 @@ extension SearchViewController:UICollectionViewDelegate, UICollectionViewDataSou
     
     
     
+    
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
         if collectionView == self.NewCollectionView{
