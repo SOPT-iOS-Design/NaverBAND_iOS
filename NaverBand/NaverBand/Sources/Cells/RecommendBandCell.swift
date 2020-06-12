@@ -14,8 +14,8 @@ class RecommendBandCell: UICollectionViewCell {
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var infoLabel: UILabel!
     
-    func setBandInfo(imageName: String, title: String, info: String) {
-        imageView.image = UIImage(named: imageName)
+    func setBandInfo(image: UIImage, title: String, info: String) {
+        imageView.image = image
         titleLabel.text = title
         infoLabel.text = info
     }

@@ -77,7 +77,7 @@
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="주제별 찾기" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dtZ-wn-H7o">
-                                                <rect key="frame" x="16" y="109" width="88" height="27"/>
+                                                <rect key="frame" x="16" y="109" width="83" height="27"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="27" id="wSq-Ao-G2m"/>
                                                 </constraints>
@@ -90,7 +90,7 @@
                                                 <state key="normal" image="btnAll"/>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="새로 시작한 밴드" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lwr-wB-WWm">
-                                                <rect key="frame" x="15.999999999999993" y="261" width="126.33333333333331" height="27"/>
+                                                <rect key="frame" x="16" y="261" width="119" height="27"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="27" id="weV-kb-xbF"/>
                                                 </constraints>
@@ -231,7 +231,7 @@
                                                                     </constraints>
                                                                 </imageView>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wiY-eU-mIW">
-                                                                    <rect key="frame" x="56" y="14.333333333333334" width="90" height="19.333333333333329"/>
+                                                                    <rect key="frame" x="56" y="16.333333333333332" width="90" height="15.333333333333332"/>
                                                                     <fontDescription key="fontDescription" name="NotoSansCJKkr-Regular" family="Noto Sans CJK KR" pointSize="13"/>
                                                                     <color key="textColor" name="maintext"/>
                                                                     <nil key="highlightedColor"/>
@@ -254,7 +254,7 @@
                                                 </cells>
                                             </collectionView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="추천 페이지" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6fW-SV-bHG">
-                                                <rect key="frame" x="16" y="452" width="88" height="27"/>
+                                                <rect key="frame" x="16" y="452" width="83" height="27"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="27" id="LqY-c4-Eue"/>
                                                 </constraints>
@@ -293,7 +293,7 @@
                                                                     </constraints>
                                                                 </imageView>
                                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="zqC-n2-NkK">
-                                                                    <rect key="frame" x="106" y="9.6666666666666643" width="190" height="60.999999999999993"/>
+                                                                    <rect key="frame" x="106" y="12.000000000000004" width="190" height="56.333333333333343"/>
                                                                     <subviews>
                                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vyv-Jo-WcB">
                                                                             <rect key="frame" x="0.0" y="0.0" width="190" height="24"/>
@@ -305,7 +305,7 @@
                                                                             <nil key="highlightedColor"/>
                                                                         </label>
                                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DZz-Kv-zpc">
-                                                                            <rect key="frame" x="0.0" y="40" width="190" height="21"/>
+                                                                            <rect key="frame" x="0.0" y="40" width="190" height="16.333333333333329"/>
                                                                             <fontDescription key="fontDescription" name="NotoSansCJKkr-Regular" family="Noto Sans CJK KR" pointSize="14"/>
                                                                             <color key="textColor" name="maintext"/>
                                                                             <nil key="highlightedColor"/>
@@ -331,7 +331,7 @@
                                                 </cells>
                                             </collectionView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="이런 밴드는 어때요" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XzE-Sz-GGS">
-                                                <rect key="frame" x="16" y="827" width="142.66666666666666" height="27"/>
+                                                <rect key="frame" x="16" y="827" width="134.66666666666666" height="27"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="27" id="Odu-8a-ZSR"/>
                                                 </constraints>
@@ -367,13 +367,13 @@
                                                                     <rect key="frame" x="0.0" y="0.0" width="254" height="151"/>
                                                                 </imageView>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Xl-ZX-Ldl">
-                                                                    <rect key="frame" x="105.33333333333333" y="51" width="43.333333333333329" height="24"/>
+                                                                    <rect key="frame" x="107.33333333333333" y="57.666666666666664" width="39.333333333333329" height="18.666666666666664"/>
                                                                     <fontDescription key="fontDescription" name="NotoSansCJKkr-Bold" family="Noto Sans CJK KR" pointSize="16"/>
                                                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5ze-G2-XJS">
-                                                                    <rect key="frame" x="111.66666666666667" y="94" width="31.000000000000014" height="18"/>
+                                                                    <rect key="frame" x="112.33333333333333" y="98" width="29.666666666666671" height="14"/>
                                                                     <fontDescription key="fontDescription" name="NotoSansCJKkr-Regular" family="Noto Sans CJK KR" pointSize="12"/>
                                                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                     <nil key="highlightedColor"/>
@@ -596,7 +596,7 @@
                                                 <rect key="frame" x="0.0" y="347" width="375" height="375"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="새소식" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1nW-vL-ctN">
-                                                        <rect key="frame" x="15.999999999999996" y="16" width="38.666666666666657" height="20"/>
+                                                        <rect key="frame" x="16.000000000000004" y="16" width="36.333333333333343" height="20"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="20" id="BSp-ih-bvN"/>
                                                         </constraints>
@@ -627,10 +627,10 @@
                                                                             </constraints>
                                                                         </imageView>
                                                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="VJX-TY-vys">
-                                                                            <rect key="frame" x="96" y="0.0" width="39.666666666666657" height="60"/>
+                                                                            <rect key="frame" x="96" y="0.0" width="37" height="60"/>
                                                                             <subviews>
                                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hYJ-yl-hnb">
-                                                                                    <rect key="frame" x="0.0" y="0.0" width="39.666666666666664" height="22"/>
+                                                                                    <rect key="frame" x="0.0" y="0.0" width="37" height="22"/>
                                                                                     <constraints>
                                                                                         <constraint firstAttribute="height" constant="22" id="jni-oR-WeZ"/>
                                                                                     </constraints>
@@ -639,7 +639,7 @@
                                                                                     <nil key="highlightedColor"/>
                                                                                 </label>
                                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lcx-bw-1mE">
-                                                                                    <rect key="frame" x="0.0" y="23" width="39.666666666666664" height="19"/>
+                                                                                    <rect key="frame" x="0.0" y="23" width="37" height="19"/>
                                                                                     <constraints>
                                                                                         <constraint firstAttribute="height" constant="19" id="2pK-Vn-fh6"/>
                                                                                     </constraints>
@@ -648,7 +648,7 @@
                                                                                     <nil key="highlightedColor"/>
                                                                                 </label>
                                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SNC-pj-0Oi">
-                                                                                    <rect key="frame" x="0.0" y="43" width="39.666666666666664" height="17"/>
+                                                                                    <rect key="frame" x="0.0" y="43" width="37" height="17"/>
                                                                                     <constraints>
                                                                                         <constraint firstAttribute="height" constant="17" id="uPj-dO-CAr"/>
                                                                                     </constraints>

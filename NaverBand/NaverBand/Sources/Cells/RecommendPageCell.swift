@@ -14,8 +14,8 @@ class RecommendPageCell: UICollectionViewCell {
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var commentLabel: UILabel!
     
-    func setPageInfo(imageName: String, title: String, comment: String) {
-        imageView.image = UIImage(named: imageName)
+    func setPageInfo(image: UIImage, title: String, comment: String) {
+        imageView.image = image
         titleLabel.text = title
         commentLabel.text = comment
     }

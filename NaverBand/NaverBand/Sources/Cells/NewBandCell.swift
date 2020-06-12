@@ -13,8 +13,8 @@ class NewBandCell: UICollectionViewCell {
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var nameLabel: UILabel!
     
-    func setNewBandInfo(imageName: String, name: String) {
-        imageView.image = UIImage(named: imageName)
+    func setNewBandInfo(image: UIImage, name: String) {
+        imageView.image = image
         nameLabel.text = name
     }
 }
