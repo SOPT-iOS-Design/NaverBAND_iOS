@@ -15,9 +15,13 @@ class RecommendBandCell: UICollectionViewCell {
     @IBOutlet weak var bandImageView: UIImageView!
     @IBOutlet weak var bandDetailLabel: UILabel!
     
-    func set(_ band: RecommendBand) {
+    func set(_ band: RBand) {
         bandNameLabel.text = band.bandName
-        bandImageView.image = band.bandImg
-        bandDetailLabel.text = band.bandDetail
+        
+        let url = URL(string: band.bandImg)
+        self.bandImageView.kf.setImage(with: url)
+        
+        bandDetailLabel.text = "멤버 \(band.bandNumOfMember) | \(band.userNickname)"
+        
     }
 }

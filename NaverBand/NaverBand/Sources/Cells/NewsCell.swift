@@ -14,9 +14,11 @@ class NewsCell: UICollectionViewCell {
     @IBOutlet weak var newsNameLabel: UILabel!
     @IBOutlet weak var newsDetailLabel: UILabel!
     
-    func set(_ news: News) {
-        newsImageView.image = news.newsImg
-        newsNameLabel.text = news.newsName
-        newsDetailLabel.text = news.newsDetail
+    func set(_ news: NNotice) {
+        
+        let url = URL(string: news.noticeThumbnail)
+        self.newsImageView.kf.setImage(with: url)
+        newsNameLabel.text = news.noticeTitle
+        newsDetailLabel.text = news.noticeSub
     }
 }

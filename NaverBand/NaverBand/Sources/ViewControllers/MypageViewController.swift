@@ -12,7 +12,7 @@ class MypageViewController: UIViewController {
     
     @IBOutlet weak var newsCollectionView: UICollectionView!
     
-    var newsList: [News] = []
+    var newsList: [NNotice] = []
     @IBOutlet weak var lineView: UIView!
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,11 +24,33 @@ class MypageViewController: UIViewController {
     }
     
     private func setDatas() -> Void {
-        let news1 = News(imgName: "icPhoto1", name: "순위로 보는 요즘 핫한 맛집과 카페", detail: "내마음속에 저장각!")
-        let news2 = News(imgName: "icPhoto2", name: "바름이의 힐링되는 미소", detail: "귀엽고 깜찍한 무료 스티커가 잔뜩~")
-        let news3 = News(imgName: "icPhoto3", name: "생일날은 케익은 필수", detail: "더 맛있는 부드러운 치즈케이크")
-        
-        newsList = [news1, news2, news3]
+        NewNoticeService.shared.getNewNotice { (networkResult) in
+            switch networkResult {
+            case .success(let data):
+                guard let dt = data as? [NNotice] else {
+                    return
+                }
+                print(dt)
+                
+                self.newsList = dt
+                self.newsCollectionView.reloadData()
+            case .requestErr(let message):
+                guard let message = message as? String else { return }
+                let alertViewController = UIAlertController(title: "통신 실패", message: message, preferredStyle: .alert)
+                let action = UIAlertAction(title: "확인", style: .cancel, handler: nil)
+                alertViewController.addAction(action)
+                self.present(alertViewController, animated: true, completion: nil)
+                
+            case .pathErr: print("path")
+            case .serverErr: print("serverErr")
+            case .networkFail: print("networkFail")
+            }
+        }
+//        let news1 = News(imgName: "icPhoto1", name: "순위로 보는 요즘 핫한 맛집과 카페", detail: "내마음속에 저장각!")
+//        let news2 = News(imgName: "icPhoto2", name: "바름이의 힐링되는 미소", detail: "귀엽고 깜찍한 무료 스티커가 잔뜩~")
+//        let news3 = News(imgName: "icPhoto3", name: "생일날은 케익은 필수", detail: "더 맛있는 부드러운 치즈케이크")
+//
+//        newsList = [news1, news2, news3]
     }
 }
 //MARK: - DataSource

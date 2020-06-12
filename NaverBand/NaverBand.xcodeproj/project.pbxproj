@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		70E170E00DA8A8C3E9249E4C /* Pods_NaverBand.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F3D5188B74E58727FF2434B /* Pods_NaverBand.framework */; };
 		D4208FB1247A49BB00F868E4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4208FB0247A49BB00F868E4 /* AppDelegate.swift */; };
 		D4208FB3247A49BB00F868E4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4208FB2247A49BB00F868E4 /* SceneDelegate.swift */; };
 		D4208FB8247A49BB00F868E4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D4208FB6247A49BB00F868E4 /* Main.storyboard */; };
@@ -25,21 +26,26 @@
 		D438F2852490DCFE00965BC9 /* NewBandService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D438F2842490DCFE00965BC9 /* NewBandService.swift */; };
 		D438F2882490DDD700965BC9 /* NetworkResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = D438F2862490DDD700965BC9 /* NetworkResult.swift */; };
 		D438F2892490DDD700965BC9 /* APIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = D438F2872490DDD700965BC9 /* APIConstants.swift */; };
+		D438F28C2490EB3E00965BC9 /* RecommendPageData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D438F28B2490EB3E00965BC9 /* RecommendPageData.swift */; };
+		D438F28E2490EB4900965BC9 /* RecommendBandData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D438F28D2490EB4900965BC9 /* RecommendBandData.swift */; };
+		D438F2902490EB6000965BC9 /* NewNoticeData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D438F28F2490EB6000965BC9 /* NewNoticeData.swift */; };
+		D438F2962490F1A900965BC9 /* RecommendPageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D438F2952490F1A900965BC9 /* RecommendPageService.swift */; };
+		D438F2982490F1BD00965BC9 /* RecommendBandService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D438F2972490F1BD00965BC9 /* RecommendBandService.swift */; };
+		D438F29A2490F36900965BC9 /* NewNoticeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D438F2992490F36900965BC9 /* NewNoticeService.swift */; };
 		D45D59EB247EADF000ABC42C /* NewBandCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D45D59EA247EADF000ABC42C /* NewBandCell.swift */; };
-		D45D59EE247EAE9700ABC42C /* NewBand.swift in Sources */ = {isa = PBXBuildFile; fileRef = D45D59ED247EAE9700ABC42C /* NewBand.swift */; };
 		D45D59F0247EB01100ABC42C /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D45D59EF247EB01100ABC42C /* UIColor.swift */; };
 		D46D4587247DED1F004F9CC9 /* FormTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = D46D4586247DED1F004F9CC9 /* FormTextField.swift */; };
 		D488B1E624814FC50062BF5C /* NewsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D488B1E524814FC50062BF5C /* NewsCell.swift */; };
-		D488B1E824814FCF0062BF5C /* News.swift in Sources */ = {isa = PBXBuildFile; fileRef = D488B1E724814FCF0062BF5C /* News.swift */; };
 		D4AC71202480C21C0006FDAE /* RecommendPageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4AC711F2480C21C0006FDAE /* RecommendPageCell.swift */; };
-		D4AC71222480C38E0006FDAE /* RecommendPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4AC71212480C38E0006FDAE /* RecommendPage.swift */; };
-		D4AC71242480D0D30006FDAE /* RecommendBand.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4AC71232480D0D30006FDAE /* RecommendBand.swift */; };
 		D4AC71262480D19C0006FDAE /* RecommendBandCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4AC71252480D19C0006FDAE /* RecommendBandCell.swift */; };
 		D4BCBD51247B85CE007590B5 /* MypageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4BCBD50247B85CE007590B5 /* MypageViewController.swift */; };
 		D4BCBD53247B85EC007590B5 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4BCBD52247B85EC007590B5 /* SearchViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2D2DD787CEB7252E89DB7694 /* Pods-NaverBand.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NaverBand.release.xcconfig"; path = "Target Support Files/Pods-NaverBand/Pods-NaverBand.release.xcconfig"; sourceTree = "<group>"; };
+		9F3D5188B74E58727FF2434B /* Pods_NaverBand.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NaverBand.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AD518A79D8550B8FCF3EC107 /* Pods-NaverBand.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NaverBand.debug.xcconfig"; path = "Target Support Files/Pods-NaverBand/Pods-NaverBand.debug.xcconfig"; sourceTree = "<group>"; };
 		D4208FAD247A49BB00F868E4 /* NaverBand.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NaverBand.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D4208FB0247A49BB00F868E4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D4208FB2247A49BB00F868E4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -60,18 +66,20 @@
 		D438F2842490DCFE00965BC9 /* NewBandService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewBandService.swift; sourceTree = "<group>"; };
 		D438F2862490DDD700965BC9 /* NetworkResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkResult.swift; sourceTree = "<group>"; };
 		D438F2872490DDD700965BC9 /* APIConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIConstants.swift; sourceTree = "<group>"; };
+		D438F28B2490EB3E00965BC9 /* RecommendPageData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendPageData.swift; sourceTree = "<group>"; };
+		D438F28D2490EB4900965BC9 /* RecommendBandData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendBandData.swift; sourceTree = "<group>"; };
+		D438F28F2490EB6000965BC9 /* NewNoticeData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewNoticeData.swift; sourceTree = "<group>"; };
+		D438F2952490F1A900965BC9 /* RecommendPageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendPageService.swift; sourceTree = "<group>"; };
+		D438F2972490F1BD00965BC9 /* RecommendBandService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendBandService.swift; sourceTree = "<group>"; };
+		D438F2992490F36900965BC9 /* NewNoticeService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewNoticeService.swift; sourceTree = "<group>"; };
 		D45D59EA247EADF000ABC42C /* NewBandCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewBandCell.swift; sourceTree = "<group>"; };
-		D45D59ED247EAE9700ABC42C /* NewBand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewBand.swift; sourceTree = "<group>"; };
 		D45D59EF247EB01100ABC42C /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
 		D46D4580247DEA00004F9CC9 /* NotoSansCJKkr-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansCJKkr-Bold.otf"; sourceTree = "<group>"; };
 		D46D4586247DED1F004F9CC9 /* FormTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormTextField.swift; sourceTree = "<group>"; };
 		D488B1E524814FC50062BF5C /* NewsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsCell.swift; sourceTree = "<group>"; };
-		D488B1E724814FCF0062BF5C /* News.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = News.swift; sourceTree = "<group>"; };
 		D4AC711C2480C0480006FDAE /* NotoSansCJKkr-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansCJKkr-Medium.otf"; sourceTree = "<group>"; };
 		D4AC711E2480C0490006FDAE /* NotoSansCJKkr-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansCJKkr-Regular.otf"; sourceTree = "<group>"; };
 		D4AC711F2480C21C0006FDAE /* RecommendPageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RecommendPageCell.swift; path = NaverBand/Sources/Cells/RecommendPageCell.swift; sourceTree = SOURCE_ROOT; };
-		D4AC71212480C38E0006FDAE /* RecommendPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendPage.swift; sourceTree = "<group>"; };
-		D4AC71232480D0D30006FDAE /* RecommendBand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendBand.swift; sourceTree = "<group>"; };
 		D4AC71252480D19C0006FDAE /* RecommendBandCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendBandCell.swift; sourceTree = "<group>"; };
 		D4BCBD50247B85CE007590B5 /* MypageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MypageViewController.swift; sourceTree = "<group>"; };
 		D4BCBD52247B85EC007590B5 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
@@ -82,17 +90,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				70E170E00DA8A8C3E9249E4C /* Pods_NaverBand.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		28C09A86C607D1AFA711BE4F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9F3D5188B74E58727FF2434B /* Pods_NaverBand.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A97A91F72966DCF28BC0817D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AD518A79D8550B8FCF3EC107 /* Pods-NaverBand.debug.xcconfig */,
+				2D2DD787CEB7252E89DB7694 /* Pods-NaverBand.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		D4208FA4247A49BB00F868E4 = {
 			isa = PBXGroup;
 			children = (
 				D4208FAF247A49BB00F868E4 /* NaverBand */,
 				D4208FAE247A49BB00F868E4 /* Products */,
+				A97A91F72966DCF28BC0817D /* Pods */,
+				28C09A86C607D1AFA711BE4F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -119,6 +147,12 @@
 			children = (
 				D438F2822490DCF300965BC9 /* NewBandData.swift */,
 				D438F2842490DCFE00965BC9 /* NewBandService.swift */,
+				D438F28B2490EB3E00965BC9 /* RecommendPageData.swift */,
+				D438F2952490F1A900965BC9 /* RecommendPageService.swift */,
+				D438F28D2490EB4900965BC9 /* RecommendBandData.swift */,
+				D438F2972490F1BD00965BC9 /* RecommendBandService.swift */,
+				D438F28F2490EB6000965BC9 /* NewNoticeData.swift */,
+				D438F2992490F36900965BC9 /* NewNoticeService.swift */,
 				D438F2872490DDD700965BC9 /* APIConstants.swift */,
 				D438F2862490DDD700965BC9 /* NetworkResult.swift */,
 			);
@@ -138,13 +172,9 @@
 			isa = PBXGroup;
 			children = (
 				D488B1E524814FC50062BF5C /* NewsCell.swift */,
-				D488B1E724814FCF0062BF5C /* News.swift */,
-				D4AC71232480D0D30006FDAE /* RecommendBand.swift */,
 				D4AC71252480D19C0006FDAE /* RecommendBandCell.swift */,
-				D45D59ED247EAE9700ABC42C /* NewBand.swift */,
 				D45D59EA247EADF000ABC42C /* NewBandCell.swift */,
 				D4AC711F2480C21C0006FDAE /* RecommendPageCell.swift */,
-				D4AC71212480C38E0006FDAE /* RecommendPage.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -201,9 +231,9 @@
 		D46D4585247DEAA0004F9CC9 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				D45D59EC247EADFC00ABC42C /* Cells */,
 				D4208FB0247A49BB00F868E4 /* AppDelegate.swift */,
 				D4208FB2247A49BB00F868E4 /* SceneDelegate.swift */,
+				D45D59EC247EADFC00ABC42C /* Cells */,
 				D46D4583247DEA77004F9CC9 /* ViewControllers */,
 			);
 			path = Sources;
@@ -216,9 +246,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D4208FC1247A49BB00F868E4 /* Build configuration list for PBXNativeTarget "NaverBand" */;
 			buildPhases = (
+				36D76C28A94A08C521FFEA60 /* [CP] Check Pods Manifest.lock */,
 				D4208FA9247A49BB00F868E4 /* Sources */,
 				D4208FAA247A49BB00F868E4 /* Frameworks */,
 				D4208FAB247A49BB00F868E4 /* Resources */,
+				C7754A310A2376D8209CA09D /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -280,6 +312,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		36D76C28A94A08C521FFEA60 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NaverBand-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C7754A310A2376D8209CA09D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NaverBand/Pods-NaverBand-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NaverBand/Pods-NaverBand-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-NaverBand/Pods-NaverBand-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		D4208FA9247A49BB00F868E4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -290,23 +364,25 @@
 				D4AC71262480D19C0006FDAE /* RecommendBandCell.swift in Sources */,
 				D438F2792490C20000965BC9 /* OneViewController.swift in Sources */,
 				D438F27F2490C31E00965BC9 /* TabBarViewController.swift in Sources */,
-				D488B1E824814FCF0062BF5C /* News.swift in Sources */,
 				D438F2882490DDD700965BC9 /* NetworkResult.swift in Sources */,
-				D4AC71222480C38E0006FDAE /* RecommendPage.swift in Sources */,
-				D45D59EE247EAE9700ABC42C /* NewBand.swift in Sources */,
+				D438F29A2490F36900965BC9 /* NewNoticeService.swift in Sources */,
 				D438F27D2490C21F00965BC9 /* FourViewController.swift in Sources */,
 				D45D59F0247EB01100ABC42C /* UIColor.swift in Sources */,
+				D438F2982490F1BD00965BC9 /* RecommendBandService.swift in Sources */,
 				D4208FB1247A49BB00F868E4 /* AppDelegate.swift in Sources */,
 				D438F2892490DDD700965BC9 /* APIConstants.swift in Sources */,
 				D45D59EB247EADF000ABC42C /* NewBandCell.swift in Sources */,
 				D4208FB3247A49BB00F868E4 /* SceneDelegate.swift in Sources */,
 				D488B1E624814FC50062BF5C /* NewsCell.swift in Sources */,
-				D4AC71242480D0D30006FDAE /* RecommendBand.swift in Sources */,
+				D438F28E2490EB4900965BC9 /* RecommendBandData.swift in Sources */,
 				D438F2852490DCFE00965BC9 /* NewBandService.swift in Sources */,
+				D438F2902490EB6000965BC9 /* NewNoticeData.swift in Sources */,
 				D438F2832490DCF300965BC9 /* NewBandData.swift in Sources */,
 				D438F27B2490C20700965BC9 /* TwoViewController.swift in Sources */,
+				D438F28C2490EB3E00965BC9 /* RecommendPageData.swift in Sources */,
 				D4BCBD51247B85CE007590B5 /* MypageViewController.swift in Sources */,
 				D4AC71202480C21C0006FDAE /* RecommendPageCell.swift in Sources */,
+				D438F2962490F1A900965BC9 /* RecommendPageService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -448,6 +524,7 @@
 		};
 		D4208FC2247A49BB00F868E4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AD518A79D8550B8FCF3EC107 /* Pods-NaverBand.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -466,6 +543,7 @@
 		};
 		D4208FC3247A49BB00F868E4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2D2DD787CEB7252E89DB7694 /* Pods-NaverBand.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

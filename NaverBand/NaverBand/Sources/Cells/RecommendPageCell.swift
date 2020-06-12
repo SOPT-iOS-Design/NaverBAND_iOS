@@ -15,10 +15,13 @@ class RecommendPageCell: UICollectionViewCell {
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var detailLabel: UILabel!
     
-    func set(_ recommendPage: RecommendPage) -> Void {
-        recommendImg.image = recommendPage.recommendPageImg
+    func set(_ recommendPage: RPage) -> Void {
+        
+        let url = URL(string: recommendPage.pageImg)
+        self.recommendImg.kf.setImage(with: url)
         nameLabel.text = recommendPage.pageName
         detailLabel.text = recommendPage.pageDetail
+
     }
     
 }

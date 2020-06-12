@@ -13,7 +13,7 @@ struct NewBandData: Codable {
     let status: Int
     let success: Bool
     let message: String
-    let data: [Datum]?
+    let data: [NBand]?
     
     enum CodingKeys: String, CodingKey {
         case status = "status"
@@ -27,12 +27,12 @@ struct NewBandData: Codable {
         status = (try? values.decode(Int.self, forKey: .status)) ?? -1
         success = (try? values.decode(Bool.self, forKey: .success)) ?? false
         message = (try? values.decode(String.self, forKey: .message)) ?? ""
-        data = (try? values.decode([Datum].self, forKey: .data)) ?? nil
+        data = (try? values.decode([NBand].self, forKey: .data)) ?? nil
     }
 }
 
-// MARK: - Datum
-struct Datum: Codable {
+// MARK: - NBand
+struct NBand: Codable {
     let bandName: String
     let bandImg: String
 
@@ -41,3 +41,4 @@ struct Datum: Codable {
         case bandImg = "band_img"
     }
 }
+

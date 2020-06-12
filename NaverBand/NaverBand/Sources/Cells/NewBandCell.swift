@@ -7,14 +7,17 @@
 //
 
 import UIKit
+import Kingfisher
 
 class NewBandCell: UICollectionViewCell {
     static let identifier: String = "NewBandCell"
     @IBOutlet weak var bandImageView: UIImageView!
     @IBOutlet weak var bandLabel: UILabel!
     
-    func set(_ bandInformation: NewBand) {
-        self.bandImageView.image = bandInformation.bandImg
-        self.bandLabel.text = bandInformation.bandLabelName
+    func set(_ bandInformation: NBand) {
+        
+        let url = URL(string: bandInformation.bandImg)
+        self.bandImageView.kf.setImage(with: url)
+        self.bandLabel.text = bandInformation.bandName
     }
 }
