@@ -148,13 +148,15 @@ extension SearchViewController: UICollectionViewDelegateFlowLayout {
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt
         indexPath: IndexPath) -> CGSize {
-        
         if collectionView == newBandCollectionView {
-            return CGSize(width: 147, height: 48)
+            //return CGSize(width: 147, height: 48)
+            return CGSize(width: (collectionView.frame.width - 70) / 2, height: (collectionView.frame.height - 12)/2)
         } else if collectionView == recommendPageCollectionView {
-            return CGSize(width: 312, height: 80)
+            //return CGSize(width: 270, height: 60)
+            return CGSize(width: (collectionView.frame.width - 44), height: (collectionView.frame.height - 52)/3)
         } else {
-            return CGSize(width: 254, height: 151)
+            //return CGSize(width: 254, height: 151)
+            return CGSize(width: (collectionView.frame.width - 120), height: (collectionView.frame.height))
         }
         
     }
@@ -162,30 +164,30 @@ extension SearchViewController: UICollectionViewDelegateFlowLayout {
     // 마진
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
         
-        return UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
+        return UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 15)
         
     }
     // 좌,우
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
-        
-        if collectionView == newBandCollectionView {
-            return 0
-        } else if collectionView == recommendPageCollectionView {
-            return 0
-        } else {
-            return 0
-        }
-        
-    }
-    // 위 아래
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
-        if collectionView == newBandCollectionView {
-            return 12
-        } else if collectionView == recommendPageCollectionView {
-            return 26
-        } else {
-            return 0
-        }
-    }
+//    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
+//
+//        if collectionView == newBandCollectionView {
+//            return 10
+//        } else if collectionView == recommendPageCollectionView {
+//            return 10
+//        } else {
+//            return 10
+//        }
+//
+//    }
+//    // 위 아래
+//    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
+//        if collectionView == newBandCollectionView {
+//            return 12
+//        } else if collectionView == recommendPageCollectionView {
+//            return 26
+//        } else {
+//            return 0
+//        }
+//    }
     
 }
